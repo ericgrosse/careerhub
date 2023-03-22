@@ -1,4 +1,5 @@
 <script>
+  //import LoginButtons from '../components/LoginButtons.svelte';
   import JobListing from '../components/JobListing.svelte';
   import { jobListings } from '../data/jobListings.js';
 </script>
@@ -6,6 +7,8 @@
 <div class="container">
   <h1 style="margin-bottom:0;"><strong><i>CareerHub</i></strong></h1>
   <h1 style="margin-top:40px;">Job Listings</h1>
+
+  <!--<LoginButtons />-->
 
   <div class="job-listings">
     {#each jobListings as jobListing}
@@ -40,7 +43,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     margin-bottom: 40px;
   }
 </style>
